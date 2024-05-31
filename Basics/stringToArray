@@ -1,0 +1,3 @@
+const x= "Hii My Name- is Satyam Sahni - and my uid - is 21BCS7307"
+
+console.log(x.split("-"))
