@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="language">
+    <li>JavaScript</li>
+  </ul>
+</body>
+<script>
+  function xyz(langName){
+    const abc=document.createElement("li")
+    abc.innerText=langName
+
+    document.querySelector(".language").appendChild(abc)
+
+
+  }
+
+  xyz("Python")
+  xyz("Typescript")
+
+  function xyzOptimised(langName){
+    const li=document.createElement("li")
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector(".language").appendChild(li)
+  }
+  xyzOptimised("golang")
+  //edit
+
+  const ac=document.querySelector("li:nth-child(2)")
+  ac.innerText="C++"
+  document.appendChild(ac)
+
+  //remove Last 
+
+  const last = document.querySelector('li:last-child');
+        last.remove();
+
+
+</script>
+</html>
